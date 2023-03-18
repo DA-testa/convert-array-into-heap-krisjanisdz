@@ -41,7 +41,7 @@ def main():
 
     if 'F' in ievade:
         file = input()
-        with open ("./test/"+file, mode = "r") as fails:
+        with open ("tests/"+file, 'r') as fails:
             n = int(fails.readline())
             data = list(map(int,fails.readline().split()))
 
